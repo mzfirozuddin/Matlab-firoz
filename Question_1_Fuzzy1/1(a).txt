@@ -1,0 +1,16 @@
+mytriangular.m
+	function[mu] = mytriangular(x,a,b,c)
+	m=(x-a)/(b-a);
+	n=(c-x)/(c-b); 
+	mu=max(min(m,n),0);
+	end
+
+
+
+Command Window:-
+	x=[0:100]
+	a=20
+	b=60
+	c=80
+	mu=mytriangular(x,a,b,c)
+	plot(x,mu)

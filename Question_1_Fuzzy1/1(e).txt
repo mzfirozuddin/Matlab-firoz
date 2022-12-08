@@ -1,0 +1,13 @@
+mysigmoidal.m
+	function[mu]=mysigmoidal(x,a,c)
+	m=exp(-a*(x-c));
+	mu=1./(1+m);
+	end
+
+
+Command Window:-
+	x=[0:100]
+	a=2
+	c=50
+	mu=mysigmoidal(x,a,c)
+	plot(x,mu)

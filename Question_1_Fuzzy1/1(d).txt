@@ -1,0 +1,15 @@
+mygeneralized.m
+	function[mu]=mygeneralized(x,a,b,c)
+	m=1+(abs((x-c)/a)).^(2*b);
+	mu=1./m;
+	end
+
+
+
+Command Window:-
+	x=[0:100]
+      a=10
+	b=20
+	c=30
+	mu=mygeneralized(x,a,b,c)
+	plot(x,mu)

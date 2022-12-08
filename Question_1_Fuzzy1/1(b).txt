@@ -1,0 +1,16 @@
+mytrapezoidal.m
+	function[mu] =mytrapezoidal(x,a,b,c,d)
+	m=(x-a)/(b-a);
+	n=(d-x)/(d-c);
+	mu=max(min((min(m,1)),n),0);
+	end
+
+
+Command Window:-
+	x=[0:100]
+	a=20
+	b=30
+	c=70
+	d=80
+	mu=mytrapezoidal(x,a,b,c,d)
+	plot(x,mu)

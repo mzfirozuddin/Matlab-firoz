@@ -1,0 +1,13 @@
+mygauss.m
+	function[mu] =mygauss(x,c,sigma)
+	m=((x – c)./sigma).^2;
+      mu=exp(-(1/2)*m);
+      end
+
+
+Command Window:-
+	x=[0:100]
+      c=30
+	sigma=10
+	mu=mygauss(x,c,sigma)
+	plot(x,mu)
